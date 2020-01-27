@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/margin_detail_default"
+    android:paddingTop="@dimen/margin_detail_top"
+    android:paddingRight="@dimen/margin_detail_default"
+    tools:context=".DetailActivity">
+
+    <ScrollView
+        android:id="@+id/itemDetailScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/detail_view_shape"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_default">
+
+            <ImageView
+                android:id="@+id/itemDetailImageView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/margin_default"
+                android:layout_marginTop="@dimen/margin_detail_default"
+                android:layout_marginRight="@dimen/margin_default"
+                android:layout_marginBottom="@dimen/margin_default"
+                android:background="@android:drawable/editbox_background_normal"
+                android:contentDescription="@string/description_itemDetailImageView"
+                app:layout_constraintBottom_toTopOf="@+id/titleDetailTextView"
+                app:layout_constraintDimensionRatio="H,1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@drawable/sample_detail_image" />
+
+            <ImageButton
+                android:id="@+id/cancelButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_detail_cancel_top"
+                android:layout_marginEnd="@dimen/margin_detail_default"
+                android:background="@null"
+                android:clickable="false"
+                android:contentDescription="@string/description_cancelButton"
+                android:tint="@color/themeColor_dark"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_cancel_black_48dp" />
+
+            <TextView
+                android:id="@+id/titleDetailTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_detail_default"
+                android:textAppearance="@style/AppTheme.DetailTitleText"
+                app:layout_constraintBottom_toTopOf="@id/priceDetailTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/itemDetailImageView"
+                tools:text="Title" />
+
+            <TextView
+                android:id="@+id/priceDetailTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_detail_default"
+                android:layout_marginEnd="@dimen/margin_detail_default"
+                android:textAppearance="@style/AppTheme.DetailPriceText"
+                app:layout_constraintBottom_toTopOf="@id/descriptionDetailTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/titleDetailTextView"
+                tools:text="Price" />
+
+            <TextView
+                android:id="@+id/descriptionDetailTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_detail_default"
+                android:layout_marginTop="@dimen/margin_detail_top"
+                android:layout_marginEnd="@dimen/margin_detail_default"
+                android:layout_marginBottom="@dimen/margin_detail_default"
+                android:textAppearance="@style/AppTheme.DetailDescriptionText"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/priceDetailTextView"
+                tools:text="Details" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/purchaseButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_purchase"
+        android:background="@drawable/purchase_btn_shape"
+        android:clickable="false"
+        android:padding="@dimen/margin_detail_default"
+        android:text="@string/purchase"
+        android:textAppearance="@style/AppTheme.Purchase"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <dimen name="margin_default">8dp</dimen>
+    <dimen name="margin_search">8dp</dimen>
+    <dimen name="margin_item_box">4dp</dimen>
+    <dimen name="margin_detail_default">16dp</dimen>
+    <dimen name="margin_detail_top">40dp</dimen>
+    <dimen name="margin_detail_cancel_top">24dp</dimen>
+    <dimen name="margin_purchase">40dp</dimen>
+</resources>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Hwahae</string>
+    <string name="hint_search">Search</string>
+    <string name="type0">All Types</string>
+    <string name="type1">Oily</string>
+    <string name="type2">Dry</string>
+    <string name="type3">Sensitive</string>
+    <string name="won">WON</string>
+    <string name="purchase">PURCHASE</string>
+    <string name="back_pressed">Please press back button again to exit.</string>
+
+    <string name="description_itemImageView">Thumbnail Image</string>
+    <string name="description_itemDetailImageView">Full Size Image</string>
+    <string name="description_cancelButton">Cancel Button</string>
+</resources>

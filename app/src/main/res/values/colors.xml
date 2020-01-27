@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#77FF66</color>
+    <color name="colorPrimaryDark">#77FF66</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="colorText1">#444444</color>
+    <color name="colorText2">#999999</color>
+
+    <color name="WHITE">#FFFFFF</color>
+    <color name="colorTextSearch">@color/colorText1</color>
+    <color name="colorTextSearchHint">@color/colorText2</color>
+    <color name="colorTextFilter">@color/colorText1</color>
+
+    <color name="themeColor_darker">#00a159</color>
+    <color name="themeColor_dark">#00e07b</color>
+    <color name="themeColor_normal">#b8ffdf</color>
+    <color name="themeColor_light">#dbffef</color>
+</resources>

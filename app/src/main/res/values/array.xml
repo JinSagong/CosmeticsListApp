@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="type_array">
+        <item>@string/type0</item>
+        <item>@string/type1</item>
+        <item>@string/type2</item>
+        <item>@string/type3</item>
+    </string-array>
+</resources>

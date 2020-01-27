@@ -1,0 +1,69 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/WHITE</item>
+        <item name="colorPrimaryDark">@color/WHITE</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.Search">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/colorTextSearch</item>
+        <item name="android:textColorHint">@color/colorTextSearchHint</item>
+    </style>
+
+    <style name="AppTheme.Filter">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/colorTextFilter</item>
+    </style>
+
+    <style name="AppTheme.TitleText">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/colorText1</item>
+    </style>
+
+    <style name="AppTheme.PriceText">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/colorText2</item>
+    </style>
+
+    <style name="AppTheme.Transparent.NoActionBar" parent="AppTheme.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="AppTheme.DetailTitleText">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorText1</item>
+    </style>
+
+    <style name="AppTheme.DetailPriceText">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/themeColor_darker</item>
+    </style>
+
+    <style name="AppTheme.DetailDescriptionText">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/colorText1</item>
+    </style>
+
+    <style name="AppTheme.Purchase">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/WHITE</item>
+    </style>
+</resources>

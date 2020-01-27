@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">화해</string>
+    <string name="back_pressed">뒤로가기 버튼을 한 번 더 누르면 종료됩니다.</string>
+    <string name="description_cancelButton">취소 버튼</string>
+    <string name="description_itemDetailImageView">전체 사이즈 이미지</string>
+    <string name="description_itemImageView">썸네일 이미지</string>
+    <string name="purchase">구매하기</string>
+    <string name="hint_search">키워드를 검색하세요.</string>
+    <string name="type0">모든 피부 타입</string>
+    <string name="type1">지성 피부</string>
+    <string name="type2">건성 피부</string>
+    <string name="type3">민감성 피부</string>
+    <string name="won">원</string>
+</resources>
