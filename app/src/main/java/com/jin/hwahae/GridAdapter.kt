@@ -14,7 +14,11 @@ import java.text.NumberFormat
 class GridAdapter(items: ArrayList<Any>) : RecyclerView.Adapter<GridAdapter.MyViewHolder>() {
     private val itemList = items
 
-    class MyViewHolder(v: View) : ViewHolder(v)
+    class MyViewHolder(v: View) : ViewHolder(v) {
+        val title: TextView = v.titleTextView
+        val price: TextView = v.priceTextView
+        val image: ImageView = v.itemImageView
+    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(
@@ -31,13 +35,13 @@ class GridAdapter(items: ArrayList<Any>) : RecyclerView.Adapter<GridAdapter.MyVi
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         val item = itemList[position] as API.Items
-        holder.itemView.titleTextView.text = item.title
-        holder.itemView.priceTextView.text =
-            (NumberFormat.getNumberInstance().format(item.price.toInt())
-                    + holder.itemView.context.getString(R.string.won))
-
+        holder.title.text = item.title
+        holder.price.text =
+            (NumberFormat.getNumberInstance().format(item.price.toInt()) + holder.itemView.context.getString(
+                R.string.won
+            ))
         val u = item.thumbnail_image
-        Glide.with(holder.itemView.context).load(u).into(holder.itemView.itemImageView)
+        Glide.with(holder.itemView.context).load(u).into(holder.image)
         holder.itemView.setOnClickListener {
             Log.d("ForChecking", "[title: ${item.title} / id: ${item.id}]")
             holder.itemView.context.startActivity<DetailActivity>("id" to item.id)
