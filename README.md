@@ -1,6 +1,6 @@
 # CosmeticsListApp
 
-Created: 2020-01-28
+Created: 2020-01-21
 
 Last Updated: 2020-01-28
 
